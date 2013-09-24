@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loggerrinerer Options</title>
+		<style>
+		body {
+			font-family: "Segoe UI", "Helvetica Neue", Ubuntu, sans-serif;
+			background-color:#2b3e42;
+			text-align:center;
+		}
+		main {
+			display: inline-block;
+			background-color: #eae9e9;
+			margin: 2em;
+			padding: 2em;
+			padding-top: 1em;
+			text-align: left;
+		}
+		h1, h2 {
+			margin: 0.3em;
+		}
+		label {
+			display: block;
+			margin: .5em;
+		}
+		input[type=text], input[type=password] {
+			display: block;
+			margin-left: 2em;
+			width: 40%;
+		} 
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Autologin</h1>
+			<p>Any information you enter below will be retrievable by anyone with access to this computer, if you would prefer to keep your information private do not use this feature.</p>
+			<form action="">
+				<label for="username">Username: <input type="text" id="username" /></label>
+				<label for="password">Password: <input type="password" id="password" /></label>
+				<label for='accepted'>
+					<input type="checkbox" id="accepted">I accept <strong>all consequences</strong> of using this feature including any unmentioned ones
+				</label>
+				<button id="save">Save?</button>
+			</form>
+		</main>
+		<script src="options.js"></script>
+	</body>
+</html>
